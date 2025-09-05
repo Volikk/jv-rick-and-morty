@@ -17,9 +17,12 @@ public class CharacterMapper {
     }
 
     public CharacterDto toDto(RickAndMortyCharacter e) {
-        return new CharacterDto(e.getId(), e.getName(),
-                e.getExternalId(), e.getStatus(),
-                e.getGender());
+        return new CharacterDto(
+                e.getId(),
+                e.getExternalId(),
+                e.getName(),
+                e.getStatus(),
+                e.getGender()
+        );
     }
 }
-
