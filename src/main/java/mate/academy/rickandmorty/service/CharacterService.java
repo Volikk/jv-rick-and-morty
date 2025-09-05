@@ -4,9 +4,9 @@ import java.util.List;
 import mate.academy.rickandmorty.dto.CharacterDto;
 
 public interface CharacterService {
-    void saveAllCharacters();
+    List<CharacterDto> findCharactersByName(String namePart);
 
     CharacterDto getRandomCharacter();
 
-    List<CharacterDto> findCharactersByName(String name);
+    void loadAllCharactersOnce();
 }
